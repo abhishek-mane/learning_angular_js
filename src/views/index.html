@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Learning AngularJS">
+    <meta name="author" content="Abhishek Mane">
+
+    <title>CouchDB Dashboard</title>
+
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles-->
+    <link href="/static/css/custom.css" rel="stylesheet">
+</head>
+
+<body ng-app='couchdb-app'>
+    <div id="wrapper" class="toggled">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#/!">
+                        CouchDB
+                    </a>
+                </li>
+                <li>
+                    <a href="#!list-dbs">List Databases</a>
+                </li>
+                <li>
+                    <a href="#!list-docs">List Documents</a>
+                </li>
+                <li>
+                    <a href="#!create-db">Create Database</a>
+                </li>
+                <li>
+                    <a href="#!add-doc">Add document</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper" >
+            <div class="container-fluid">
+                <h1>CouchDB Dashboard</h1>
+                <p>This app is created while learning AngularJS. App is trying to do some operations on DB.</p>
+            </div>
+        </div>
+        <div style="margin-top:50px;" ng-view></div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Angular Routes -->
+    <script src="/static/js/routes.js"></script>
+
+    <!-- Angular Controllers -->
+    <!-- <script src="/static/js/controllers.js"></script> -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
+
+</html>
