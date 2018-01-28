@@ -10,5 +10,4 @@ module.exports = {
     initPassport:       require('./passport'),
     initServer:         require('./server'),
     initPageNotFound:   require('./page-not-found.js'),
-    launchThreads:      require('./threads')
 };

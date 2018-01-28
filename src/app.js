@@ -10,7 +10,6 @@ let
     // get server configuration modules
     {
         logDirCheck,
-        launchThreads,
         initBodyParser,
         initCookieParser,
         initServeStatic,
@@ -24,9 +23,6 @@ let
     } = require(global.webconfig.path.server_config);
 
 logDirCheck().
-    then(() => {
-        return launchThreads();
-    }).
     then(() => {
         return initBodyParser(app);
     }).
