@@ -1,7 +1,7 @@
 let path = require('path');
 
 module.exports = {
-    port: 9000,
+    port: 9001,
     static_prefix: '/static',
     logging: {
         logger: path.join(__dirname, 'server-config', 'winston'),

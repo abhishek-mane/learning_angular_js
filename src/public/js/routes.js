@@ -21,6 +21,6 @@ app.config(function ($routeProvider) {
 });
 
 app.controller('listDBController', function ($scope) {
-    $scope.name = "test";
+    $scope.name = "test name";
     console.log($scope.name);
 });
